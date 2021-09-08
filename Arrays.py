@@ -1,0 +1,3 @@
+
+A=[]
+print(len(A))
