@@ -4,21 +4,27 @@ import java.util.ArrayList;
 
 public class LinesStateManager {
     private PaintPanel pp;
+    private ArrayList<CmdInterface> activeCmds = new ArrayList();
     private LinesStateMemento memento = null;
+
     private class LinesStateMemento {
-        private ArrayList<CmdInterface> cmdsSnapshot = new ArrayList();
+        private ArrayList<DrawCmdInterface> cmdsSnapshot = new ArrayList();
 
         private LinesStateMemento() {
 
         }
-        private void setState(){
 
+        private void setState() {
+            pp.setDrawList(this.cmdsSnapshot);
+            pp.repaint();
         }
     }
 
-    public void getMemento(ArrayList<CmdInterface> activeCmds) {
+    public void getMemento(ArrayList<DrawCmdInterface> activeCmds) {
 
-         memento =  new LinesStateMemento();
+        memento = new LinesStateMemento();
+        memento.cmdsSnapshot.clear();
+        memento.cmdsSnapshot.addAll(activeCmds);
 
     }
 

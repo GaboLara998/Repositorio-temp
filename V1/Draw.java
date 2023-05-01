@@ -18,9 +18,9 @@ public class Draw {
     private Color color;
     private boolean justClicked = false;
     private PaintPanel pp;
-    private int panelWidth;
-    private boolean isAbleToGenLine;
-    private boolean isAbleToUnGenLine;
+    private  int panelWidth;
+    private  boolean isAbleToGenLine;
+    private  boolean isAbleToUnGenLine;
 
     public Draw(PaintPanel pp) {
         this.pp = pp;
@@ -35,6 +35,7 @@ public class Draw {
             dy = 340;
         }
     }
+
 
 
     public void justClicked(boolean clicked) {

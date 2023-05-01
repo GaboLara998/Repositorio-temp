@@ -12,9 +12,19 @@ import java.awt.*;
  * @author dfellig
  */
 public interface CmdInterface {
+    public int getX();
+
+    public int getY();
+
+
+    public int getDx();
+
+    public int getDy();
+
+    public Color getColor();
+
+
     public void execute();
 
-    public default void unDo(){
-
-    }
+    public void unDo();
 }

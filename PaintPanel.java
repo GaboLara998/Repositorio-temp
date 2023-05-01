@@ -16,29 +16,26 @@ import java.util.ArrayList;
 public class PaintPanel extends JPanel {
 
     private int x, y, dx, dy;
-    ArrayList<CmdInterface> drawList;
-    Draw draw;
+    private ArrayList<DrawCmdInterface> drawList;
+    private Draw draw;
 
     public void setDraw(Draw draw) {
         this.draw = draw;
     }
 
-    public void setDrawList(ArrayList drawList) {
+    public void setDrawList(ArrayList<DrawCmdInterface> drawList) {
         this.drawList = drawList;
     }
 
-
     private void drawLines(Graphics g) {
 
-
-        for (CmdInterface cmd : drawList) {
+        for (DrawCmdInterface cmd : drawList) {
             g.setColor(cmd.getColor());
             x = cmd.getX();
             y = cmd.getY();
             dx = cmd.getDx();
             dy = cmd.getDy();
             g.drawLine(x, y, dx, dy);
-
         }
     }
 
