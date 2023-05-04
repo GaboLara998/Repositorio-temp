@@ -43,5 +43,5 @@ Utilizamos un primer **Diccionario** para la conversión de las escalas de veloc
 
 ## Bloquear a todos los hosts
 
-Similar a la función de limitar la red, tenemos nuestra clase Blocker, que recibe el ID del host que se busca bloquear.
+Similar a la función de limitar la red, tenemos nuestra clase Blocker, que recibe el ID del host que se busca bloquear. Y de igual manera usamos **thread.run()** para su ejecución.
 
