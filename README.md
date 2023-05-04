@@ -16,13 +16,16 @@ Funcionamiento del comando **spawn** para ejecutar el programa de **pexpect** pa
 
 ![Funcionamiento del comando **spawn** para ejecutar el programa de **pexpect** para levantar una instancia del programa **Evillimiter** junto con su respuesta.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/Expect1.2%20-%20Imgur.png)
 
-Mediante el comando **send** junto con **\r**, enviamos los comandos. Con **expect** muestra lo que hace la aplicación.
+Mediante el comando **send** junto con **\r**, enviamos los comandos.
 
 Funcionamiento del comando **send** junto con el argumento a ejecutar junto con **\r**.
 
 ![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/expect%201.4%20-%20Imgur.png)
 
+Con **expect** muestra lo que hace la aplicación.
+![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/Expect1.5%20-%20Imgur.png)
 
+ 
 De manera que levantamos una instancia de **Evillimter**, le definimos un **TimeOut** de **1 hora**, esto se hace porque se limita mientras la aplicación se esté ejecutando, el límite de **BandWidth** que se haya realizado hacia un host estará activo, por lo que el **TimeOut** nos ayuda a que si no hay respuesta de vuelta, tras una hora de limitación, lo quita. 
 
 
