@@ -23,7 +23,8 @@ Utilizamos e importamos la biblioteca **pexpect** que trabaja sobre **Linux**. E
 Mediante el comando **send** junto con **\r**, enviamos los comandos. Con **expect** muestra lo que hace la aplicación.
 
 
-![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://imgur.com/gallery/gDmIv39)
+![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://i.imgur.com/gDmIv39.png)
+
 
 De manera que levantamos una instancia de **Evillimter**, le definimos un **TimeOut** de **1 hora**, esto se hace porque se limita mientras la aplicación se esté ejecutando, el límite de **BandWidth** que se haya realizado hacia un host estará activo, por lo que el **TimeOut** nos ayuda a que si no hay respuesta de vuelta, tras una hora de limitación, lo quita. 
 
