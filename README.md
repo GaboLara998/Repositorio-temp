@@ -1,10 +1,5 @@
 # Repositorio-temp
 
-# Welcome to StackEdit!
-
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
-
-
 #   Función de limitar BandWidth a Host
 
 A continuación se explicará el funcionamiento de limitar el BandWidth a un Host
@@ -17,13 +12,15 @@ Utiliza la herramienta **TC (traffic control)** para la gestión de las polític
 
 Utilizamos e importamos la biblioteca **pexpect** que trabaja sobre **Linux**. Este programa nos permite **enviar comandos** hacia otros programas, levantamos una instancia del programa Evillimter, con el comando **spawn**, la respuesta recibida determina que el programa está corriendo.
 
-![Funcionamiento del comando spawn para ejecutar el programa de pexpect para levantar una instancia del programa Evillimiter junto con su respuesta.]([https://imgur.com/a/iHO0dY9](https://www.flickr.com/photos/198238956@N02/52868891759/in/dateposted-public/))
+Funcionamiento del comando **spawn** para ejecutar el programa de **pexpect** para levantar una instancia del programa **Evillimiter** junto con su respuesta.
 
+![Funcionamiento del comando **spawn** para ejecutar el programa de **pexpect** para levantar una instancia del programa **Evillimiter** junto con su respuesta.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/Expect1.2%20-%20Imgur.png)
 
 Mediante el comando **send** junto con **\r**, enviamos los comandos. Con **expect** muestra lo que hace la aplicación.
 
+Funcionamiento del comando **send** junto con el argumento a ejecutar junto con **\r**.
 
-![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://i.imgur.com/gDmIv39.png)
+![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/expect%201.4%20-%20Imgur.png)
 
 
 De manera que levantamos una instancia de **Evillimter**, le definimos un **TimeOut** de **1 hora**, esto se hace porque se limita mientras la aplicación se esté ejecutando, el límite de **BandWidth** que se haya realizado hacia un host estará activo, por lo que el **TimeOut** nos ayuda a que si no hay respuesta de vuelta, tras una hora de limitación, lo quita. 
