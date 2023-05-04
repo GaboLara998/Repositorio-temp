@@ -8,7 +8,11 @@ A continuación se explicará el funcionamiento de limitar el BandWidth a un Hos
 
 Utiliza la herramienta **TC (traffic control)** para la gestión de las políticas de tráfico y límites de anchos de banda. En este caso se está realizando un proceso similar a **ARP Spoofing**, el cual el programa envía mensajes ARP falsos a la red conectada para asociar la dirección **MAC** con la dirección **IP**, para poder interceptar el tráfico de la red, y de este modo poder manipularlo. Sin embargo, el límite está vigente  *siempre y cuando* el programa esté en ejecución. 
 
-## Funcionamiento en nuestro proyecto
+## Funcionamiento de ARP Spoofing:
+
+Como se mencionó, **ARP Spoofing** funciona mediante el envio de **paquetes ARP Falsos** a todos los dispositivos conectados a la red. Estos paquetes contienen **información falta de la tabla ARP**, lo que provoca que los dispositivos afectados envien sus paquetes de red al programa que realiza el **ARP Spoofing**, en lugar de enviar los paquetes a su destino original. Estas **tablas de ARP** sirven para determinar las **direcciones MAC** del dispositivo de destino, por lo que mapea la **dirección IP** con su respectiva **dirección MAC**. Por lo tanto **Evillimiter** utiliza esta información para posteriormente realizar **manipulaciones en el tráfico de la red** de los dispositivos. 
+
+## Funcionamiento de la Clase Limiter en nuestro proyecto
 
 Utilizamos e importamos la biblioteca **pexpect** que trabaja sobre **Linux**. Este programa nos permite **enviar comandos** hacia otros programas, levantamos una instancia del programa Evillimter, con el comando **spawn**, la respuesta recibida determina que el programa está corriendo.
 
@@ -41,7 +45,7 @@ Usamos thereads, ya que no se puede tener una aplicación siempre corriendo en e
 Utilizamos un primer **Diccionario** para la conversión de las escalas de velocidades a las cuales queremos limitar. De igual manera, un segundo **Diccionario** con el **Id el host** que buscamos limitar, que es el primer par, y el segundo par es un **array** que contiene la **velocidad** a la cual se le va a limitar al host,  junto con la **unidad de velocidad** a la que se está limitando.
 
 
-## Bloquear a todos los hosts
+## Funcion de la Clase para Bloquear a todos los hosts
 
 Similar a la función de limitar la red, tenemos nuestra clase Blocker, que recibe el ID del host que se busca bloquear. Y de igual manera usamos **thread.run()** para su ejecución.
 
