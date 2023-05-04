@@ -22,7 +22,9 @@ Funcionamiento del comando **send** junto con el argumento a ejecutar junto con 
 
 ![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/expect%201.4%20-%20Imgur.png)
 
+
 Con **expect** muestra lo que hace la aplicación.
+
 ![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/Expect1.5%20-%20Imgur.png)
 
  
