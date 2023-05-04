@@ -17,7 +17,7 @@ Utiliza la herramienta **TC (traffic control)** para la gestión de las polític
 
 Utilizamos e importamos la biblioteca **pexpect** que trabaja sobre **Linux**. Este programa nos permite **enviar comandos** hacia otros programas, levantamos una instancia del programa Evillimter, con el comando **spawn**, la respuesta recibida determina que el programa está corriendo.
 
-![Funcionamiento del comando spawn para ejecutar el programa de pexpect para levantar una instancia del programa Evillimiter junto con su respuesta.]([https://imgur.com/a/iHO0dY9](https://www.flickr.com/photos/198238956@N02/52868891759/in/dateposted-public/))
+![Funcionamiento del comando send junto con el argumento a ejecutar junto con \r.](https://github.com/GaboLara998/Repositorio-temp/blob/main/Imagenes/Expect1.2%20-%20Imgur.png)
 
 
 Mediante el comando **send** junto con **\r**, enviamos los comandos. Con **expect** muestra lo que hace la aplicación.
